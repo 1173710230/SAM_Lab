@@ -1,0 +1,25 @@
+dataSources:
+  db_studentInfo1: !!org.apache.commons.dbcp.BasicDataSource
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db_studentinfo1;
+    username: root
+    password: 123456
+  db_studentInfo2: !!org.apache.commons.dbcp.BasicDataSource
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db_studentinfo2;
+    username: root
+    password: 123456
+  db_studentInfo3: !!org.apache.commons.dbcp.BasicDataSource
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db_studentinfo3;
+    username: root
+    password: 123456
+
+shardingRule:
+  tables:
+    t_student:
+      actualDataNodes: db_studentinfo${1..3}.t_student
+      databaseStrategy:
+        inline:
+          shardingColumn: stuId
+          algorithmExpression: db${stuId % 3 + 1}

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>StudentInfoManage</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>loginServlet</servlet-name>
+		<servlet-class>com.lsq.web.LoginServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>facultyListServlet</servlet-name>
+		<servlet-class>com.lsq.web.FacultyListServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>dormitoryListServlet</servlet-name>
+		<servlet-class>com.lsq.web.DormitoryListServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>gradeListServlet</servlet-name>
+		<servlet-class>com.lsq.web.GradeListServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>facultyComboListServlet</servlet-name>
+		<servlet-class>com.lsq.web.FacultyComboListServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>dormitoryComboListServlet</servlet-name>
+		<servlet-class>com.lsq.web.DormitoryComboListServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>gradeComboListServlet</servlet-name>
+		<servlet-class>com.lsq.web.GradeComboListServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>studentListServlet</servlet-name>
+		<servlet-class>com.lsq.web.StudentListServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>facultySaveServlet</servlet-name>
+		<servlet-class>com.lsq.web.FacultySaveServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>dormitorySaveServlet</servlet-name>
+		<servlet-class>com.lsq.web.DormitorySaveServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>gradeSaveServlet</servlet-name>
+		<servlet-class>com.lsq.web.GradeSaveServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>studentSaveServlet</servlet-name>
+		<servlet-class>com.lsq.web.StudentSaveServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>facultyDeleteServlet</servlet-name>
+		<servlet-class>com.lsq.web.FacultyDeleteServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>gradeDeleteServlet</servlet-name>
+		<servlet-class>com.lsq.web.GradeDeleteServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>dormitoryDeleteServlet</servlet-name>
+		<servlet-class>com.lsq.web.DormitoryDeleteServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>studentDeleteServlet</servlet-name>
+		<servlet-class>com.lsq.web.StudentDeleteServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>loginServlet</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>facultyListServlet</servlet-name>
+		<url-pattern>/facultyList</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>gradeListServlet</servlet-name>
+		<url-pattern>/gradeList</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>dormitoryListServlet</servlet-name>
+		<url-pattern>/dormitoryList</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>facultyComboListServlet</servlet-name>
+		<url-pattern>/facultyComboList</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>dormitoryComboListServlet</servlet-name>
+		<url-pattern>/dormitoryComboList</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>gradeComboListServlet</servlet-name>
+		<url-pattern>/gradeComboList</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>studentListServlet</servlet-name>
+		<url-pattern>/studentList</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>facultyDeleteServlet</servlet-name>
+		<url-pattern>/facultyDelete</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>dormitoryDeleteServlet</servlet-name>
+		<url-pattern>/dormitoryDelete</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>gradeDeleteServlet</servlet-name>
+		<url-pattern>/gradeDelete</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>studentDeleteServlet</servlet-name>
+		<url-pattern>/studentDelete</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>facultySaveServlet</servlet-name>
+		<url-pattern>/facultySave</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>dormitorySaveServlet</servlet-name>
+		<url-pattern>/dormitorySave</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>gradeSaveServlet</servlet-name>
+		<url-pattern>/gradeSave</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>studentSaveServlet</servlet-name>
+		<url-pattern>/studentSave</url-pattern>
+	</servlet-mapping>
+</web-app>
